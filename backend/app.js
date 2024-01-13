@@ -2,8 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const path = require('path');
-const cors = require("cors");
-const bodyParser = require("body-parser");
 
 const app = express();
 
@@ -13,8 +11,8 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 
-app.use(cors())
-app.use(bodyParser.urlencoded({ extended: false }));
+
+
 app.use(cookieParser());
 app.use(express.json());
 const user = require("../backend/routes/userroutes");
