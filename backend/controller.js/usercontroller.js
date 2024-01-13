@@ -171,7 +171,6 @@ exports.isauthenticateduser = catchAsyncErrors(async (req, res, next) => {
         req.user = await User.findById(decodedData.id);
         next();
     } catch (error) {
-        // Token is invalid or expired
         return next(new ErrorHandler("Invalid or expired token", 401));
     }
 })
