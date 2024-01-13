@@ -28,7 +28,8 @@ app.get("*", (req, res) => {
 
 const connectdatabase = () => {
     mongoose.connect(process.env.mongoURI, {
-        useNewUrlParser: true, useUnifiedTopology: true,
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
     }).then((data) => {
         console.log(`Mongodb connected with server: ${data.connection.host}`);
     });
