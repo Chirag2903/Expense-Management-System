@@ -1,0 +1,114 @@
+/* src/css/Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.login-container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35vw;
+    height: 100%;
+    background-image: url('https://media.licdn.com/dms/image/D5612AQGplp7JKG6Iiw/article-cover_image-shrink_720_1280/0/1673950361361?e=2147483647&v=beta&t=NxzErCoXqQ-xwkHJZZkKGKYNA21hJh3oNMUJzNKQr9M');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+.login-container::after {
+    content: "";
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 35vw;
+    height: 100%;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*D1nB3kJH4xi7m2mzDPr3aw.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+
+.toggle-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.toggle-container button {
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.toggle-container button.active {
+    color: rgb(74, 74, 246);
+    border-bottom: 2px solid rgb(74, 74, 246);
+}
+
+.toggle-container button:hover {
+    color: white;
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid rgb(74, 74, 246);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form.signup {
+    height: 45vh;
+}
+
+.login-form.login {
+    height: 35vh;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(74, 74, 246);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(30, 30, 188);
+}

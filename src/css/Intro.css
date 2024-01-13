@@ -1,0 +1,50 @@
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.container-1 {
+    width: 40%;
+    height: 50%;
+    /* border: 2px solid black; */
+    padding-top: 7rem;
+
+}
+
+.container-1 h1 {
+    margin-top: 3rem;
+    font-size: 1.9rem;
+}
+
+.container-1 span {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: rgb(74, 74, 246);
+
+}
+
+.container-1 a button {
+    background-color: rgb(74, 74, 246);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.container-1 a button:hover {
+    background-color: rgb(30, 30, 188);
+    cursor: pointer;
+}
+
+
+.container-2 {
+    width: 40%;
+    height: 100%;
+    background-image: url("https://www.sutisoft.com/blog/wp-content/uploads/2021/12/Automated-Expense-Management-Platform.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
