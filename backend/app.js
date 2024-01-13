@@ -4,12 +4,11 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 
 if (process.env.NODE_ENV !== "production") {
-    require("dotenv").config({ path: "backend/.env" });
+    require("dotenv").config("/backend/.env");
 }
 
 
 const app = express();
-const PORT = process.env.PORT || 3001;
 
 app.use(cookieParser());
 app.use(express.json());
@@ -32,6 +31,6 @@ app.use(express.static(path.join(__dirname, "../build")));
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../build/index.html"))
 })
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
 });
